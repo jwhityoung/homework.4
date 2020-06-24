@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Code Quiz!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="scores.js">Highscores <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="timer" id="time"> </div></a>
+        </div>
+    </nav>
+
+
+    <div class="startpage">
+        <h1>Coding Quiz Challenge!</h1>
+
+        <div class="instructions">
+            <p>
+                Try to answer the following coding questions within the time
+                limit (timer is located in the upper righthand corner). Heads up -if you answer a question incorrectly
+                it will
+                deduct 10 seconds from the timer.
+            </p>
+            <button type="button" class="btn btn-info" id="start">Start Quiz!</button>
+        </div>
+    </div>
+
+    <div id="quiz-questions" class="hide" class="questionContainer">
+        <h2 id="questions"></h2>
+        <div id="answer-choices" class="answers">
+            <div>
+                <ul class="mx-auto" id="q1">
+                    <li><button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button1">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button2">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button3">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button4">Secondary</button></li><br>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary next mx-auto" id="next-question">Next Question</button>
+            </div>
+
+            <div>
+                <ul class="mx-auto" id="q2">
+                    <li><button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button5">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button6">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button7">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button8">Secondary</button></li><br>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary next mx-auto" id="next-question1">Next
+                    Question</button>
+            </div>
+
+            <div>
+                <ul class="mx-auto" id="q3">
+                    <li><button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button9">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button10">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button11">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button12">Secondary</button></li><br>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary next mx-auto" id="next-question2">Next Question</button>
+            </div>
+            <div>
+                <ul class="mx-auto" id="q4">
+                    <li><button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button13">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button14">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button15">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button16">Secondary</button></li><br>
+                </ul>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-secondary next mx-auto" id="next-question3">Next Question</button>
+            </div>
+            <div>
+                <ul class="mx-auto" id="q5">
+                    <li><button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button17">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button18">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button19">Secondary</button></li><br>
+                    <li> <button type="button" class="btn btn-outline-secondary answer-choice"
+                            id="button20">Secondary</button></li><br>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary next mx-auto" id="finish">Finish</button>
+            </div>
+            <div>
+                <p class="rightorwrong"></p>
+            </div>
+        </div>
+    </div>
+    <div class="hide2">
+        <div class="end-screen" id="end-screen">
+            <h2 id="header2">All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <p>
+                Enter initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Finish</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>

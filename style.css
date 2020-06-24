@@ -1,0 +1,39 @@
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+.startpage {
+    width: 75%;
+    padding-left: 250px;
+    text-align: center;
+}
+
+.hide2 {
+    text-align: center;
+}
+
+
+
+#questions {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 25px;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.rightorwrong {
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.next {
+    margin-bottom: 50px;
+
+}
+
